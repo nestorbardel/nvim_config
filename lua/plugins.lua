@@ -39,5 +39,34 @@ return require('packer').startup(function(use)
  }
  use "EdenEast/nightfox.nvim"
  use "tpope/vim-fugitive"
+ use 'preservim/nerdtree'
+ -- need install
+ use '/preservim/tagbar'
+ use 'windwp/nvim-autopairs'
+  use {
+        "mfussenegger/nvim-dap",
+        config = function()
+          require("dap.nvim-dap")
+        end
+
+    }
+      use {
+        "theHamsta/nvim-dap-virtual-text",
+        requires = {
+            "mfussenegger/nvim-dap"
+        },
+        --config = function()
+        --    require("dap.nvim-dap-virtual-text")
+        --end
+    }
+    use {
+        "rcarriga/nvim-dap-ui",
+        requires = {
+            "mfussenegger/nvim-dap"
+        },
+ --       config = function()
+   --         require("dap.nvim-dap-ui")
+     --   end
+    }
 end
 )

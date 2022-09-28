@@ -12,4 +12,6 @@ vim.g.maplocalleader = " "
 
 vim.keymap.set("n", "<leader>ll", ":tabn <CR>", opts)
 keymap("n", "<leader>hh", ":tabp <CR>", opts)
-
+keymap("n", "<leader>nt", ":NERDTreeToggle <CR>", opts)
+keymap("n", "<leader>nf", ":NERDTreeFind <CR>", opts)
+keymap("n", "<leader>tt", ":TagbarToggle <CR>", opts)

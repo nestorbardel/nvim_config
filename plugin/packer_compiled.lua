@@ -94,6 +94,11 @@ _G.packer_plugins = {
     path = "/home/nestor/.local/share/nvim/site/pack/packer/start/cmp-path",
     url = "https://github.com/hrsh7th/cmp-path"
   },
+  ["diffview.nvim"] = {
+    loaded = true,
+    path = "/home/nestor/.local/share/nvim/site/pack/packer/start/diffview.nvim",
+    url = "https://github.com/sindrets/diffview.nvim"
+  },
   ["gitsigns.nvim"] = {
     loaded = true,
     path = "/home/nestor/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",

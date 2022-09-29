@@ -10,8 +10,8 @@ local keymap = vim.api.nvim_set_keymap
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
-vim.keymap.set("n", "<leader>ll", ":tabn <CR>", opts)
-keymap("n", "<leader>hh", ":tabp <CR>", opts)
+vim.keymap.set("n", "<leader><Right>", ":tabn <CR>", opts)
+keymap("n", "<leader><Left>", ":tabp <CR>", opts)
 keymap("n", "<leader>nt", ":NERDTreeToggle <CR>", opts)
 keymap("n", "<leader>nf", ":NERDTreeFind <CR>", opts)
 keymap("n", "<leader>tt", ":TagbarToggle <CR>", opts)

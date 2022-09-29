@@ -68,5 +68,7 @@ return require('packer').startup(function(use)
    --         require("dap.nvim-dap-ui")
      --   end
     }
+    use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' }
+ --  use 'nvim-telescope/telescope-dap.nvim'
 end
 )

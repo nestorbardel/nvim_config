@@ -7,6 +7,6 @@ set softtabstop=4
 set shiftwidth=4
 set smartindent
 set autoindent
-colorscheme nightfox
+colorscheme carbonfox
 
 lua require('plugins')

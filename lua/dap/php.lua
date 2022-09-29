@@ -2,7 +2,7 @@ return {
     adapters = {
         type='executable',
         command = 'node',
-        args = {"/home/dreamfly/vscode-php-debug/out/phpDebug.js"},
+        args = {"/home/nestor/repos/vscode-php-debug/out/phpDebug.js"},
     },
     configurations = {
         {
@@ -18,7 +18,10 @@ return {
             name="listen address",
             type="php",
             request="launch",
-            port=9009
+            port=9009,
+            pathMappings = {
+                ['/home/datawarehouse'] = "${workspaceFolder}"
+            }
         }
     }
 }

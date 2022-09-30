@@ -7,7 +7,7 @@ require("dapui").setup({
     remove = "d",
     edit = "e",
     repl = "r",
-    toggle = "<leader>xd",
+    toggle = "<leader>dx",
   },
   -- Expand lines larger than the window
   -- Requires >= 0.7

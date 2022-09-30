@@ -30,7 +30,10 @@ return require('packer').startup(function(use)
         'hrsh7th/cmp-nvim-lsp',
         'hrsh7th/cmp-buffer',
         'hrsh7th/cmp-path',
-        'hrsh7th/cmp-cmdline'
+        'hrsh7th/cmp-cmdline',
+        "rafamadriz/friendly-snippets",
+        "mattn/emmet-vim",
+        "onsails/lspkind.nvim"
     }
   }
  use {
@@ -39,7 +42,25 @@ return require('packer').startup(function(use)
  }
  use "EdenEast/nightfox.nvim"
  use "tpope/vim-fugitive"
- use 'preservim/nerdtree'
+ -- use 'preservim/nerdtree'
+  use({
+    "scrooloose/nerdtree",
+  })
+   use({
+    "tpope/vim-surround",
+    "tpope/vim-commentary",
+    "alvan/vim-closetag",
+  })
+   use({
+    "ryanoasis/vim-devicons",
+    "folke/tokyonight.nvim",
+    "nvim-lualine/lualine.nvim",
+    'norcalli/nvim-colorizer.lua'
+  })
+    use({
+    "maximbaz/lightline-ale",
+    "itchyny/lightline.vim",
+  })
  -- need install
  use '/preservim/tagbar'
  use 'windwp/nvim-autopairs'
@@ -69,6 +90,29 @@ return require('packer').startup(function(use)
      --   end
     }
     use { 'sindrets/diffview.nvim', requires = 'nvim-lua/plenary.nvim' }
+    use {
+      'rmagatti/auto-session',
+      config = function()
+        require("auto-session").setup {
+          log_level = "error",
+          auto_session_suppress_dirs = { "~/", "~/Projects", "~/Downloads", "/"},
+        }
+      end
+    }
+    use({
+      "gbprod/phpactor.nvim",
+      requires = {
+        "nvim-lua/plenary.nvim", -- required to update phpactor
+        "neovim/nvim-lspconfig" -- required to automaticly register lsp serveur
+      },
+      config = function()
+        require("phpactor").setup({
+          -- your configuration comes here
+          -- or leave it empty to use the default settings
+          -- refer to the configuration section below
+        })
+      end
+    })
  --  use 'nvim-telescope/telescope-dap.nvim'
 end
 )

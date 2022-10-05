@@ -28,6 +28,7 @@ require('telescope').setup{
     -- please take a look at the readme of the extension you want to configure
   }
 }
+
 vim.keymap.set('n', '<leader>pp', require"telescope.builtin".git_files, {remap = false})
 vim.keymap.set('n', '<leader>po', require"telescope.builtin".find_files, {remap = false})
 vim.keymap.set('n', '<leader>gs', require"telescope.builtin".git_status, {remap = false})

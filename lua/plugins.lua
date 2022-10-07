@@ -114,6 +114,9 @@ return require('packer').startup(function(use)
       end
     })
     use 'nvim-lua/completion-nvim'
+    use 'tanvirtin/monokai.nvim'
+    use 'navarasu/onedark.nvim'
+    use 'sainnhe/edge'
  --   use {'neoclide/coc.nvim', branch = 'release'}
  --  use 'nvim-telescope/telescope-dap.nvim'
 end

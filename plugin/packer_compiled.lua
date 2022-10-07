@@ -110,6 +110,11 @@ _G.packer_plugins = {
     path = "/home/nestor/.local/share/nvim/site/pack/packer/start/diffview.nvim",
     url = "https://github.com/sindrets/diffview.nvim"
   },
+  edge = {
+    loaded = true,
+    path = "/home/nestor/.local/share/nvim/site/pack/packer/start/edge",
+    url = "https://github.com/sainnhe/edge"
+  },
   ["emmet-vim"] = {
     loaded = true,
     path = "/home/nestor/.local/share/nvim/site/pack/packer/start/emmet-vim",
@@ -144,6 +149,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/nestor/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
+  },
+  ["monokai.nvim"] = {
+    loaded = true,
+    path = "/home/nestor/.local/share/nvim/site/pack/packer/start/monokai.nvim",
+    url = "https://github.com/tanvirtin/monokai.nvim"
   },
   nerdtree = {
     loaded = true,
@@ -200,6 +210,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/nestor/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
+  },
+  ["onedark.nvim"] = {
+    loaded = true,
+    path = "/home/nestor/.local/share/nvim/site/pack/packer/start/onedark.nvim",
+    url = "https://github.com/navarasu/onedark.nvim"
   },
   ["packer.nvim"] = {
     loaded = true,
